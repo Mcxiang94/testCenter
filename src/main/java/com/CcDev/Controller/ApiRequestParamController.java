@@ -1,4 +1,4 @@
-package com.CcDev.TestProjectController;
+package com.CcDev.Controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;

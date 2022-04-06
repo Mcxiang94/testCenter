@@ -1,4 +1,4 @@
-package com.CcDev.TestProjectController;
+package com.CcDev.Controller;
 
 import com.alibaba.fastjson.JSONPath;
 import org.hamcrest.Matchers;
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
-public class TestProjectController {
+public class TestUserController {
     @Resource
     private MockMvc mockMvc;
     String sessionId;
@@ -45,7 +45,7 @@ public class TestProjectController {
     }
 
     @Test
-    public void test() throws Exception {
+    public void testFind() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/user/find")
                         .header("Authorization", sessionId)
                         .param("username", "022@qq.com")
