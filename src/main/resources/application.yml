@@ -1,0 +1,15 @@
+server:
+  port: 18080
+  servlet:
+    context-path: /testCenter
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/api-runner?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+
+logging:
+  level:
+    root: info
+    com.CcDev.mapper: trace
