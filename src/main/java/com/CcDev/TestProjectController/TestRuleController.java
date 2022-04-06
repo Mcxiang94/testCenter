@@ -1,4 +1,4 @@
-package com.CcDev.controller;
+package com.CcDev.TestProjectController;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-02-17
  */
 @RestController
-@RequestMapping("/caseParamValue")
-public class CaseParamValueController {
+@RequestMapping("/testRule")
+public class TestRuleController {
 
 }
